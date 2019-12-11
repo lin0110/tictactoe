@@ -1,3 +1,23 @@
+let currentPlayer = "O";
+let turns = 0;
+let gameEnd = false;
+
+function performLogic(buttonId, tileId):
+    $(buttonId).hide();
+    $(tileId).show(currentPlayer);
+
+function turns():
+    if(currentPlayer == "O"):
+        currentPlayer = "X";
+    else:
+        currentPlayer = "O"    
+
+let box1 = "";
+let box2 = "";
+let box3 = "";
+let box4 = "";
+let box5 = "";
+let box6 = "";
 
 
 
@@ -5,39 +25,39 @@
 
 
 
-$("#button1").click(function() {
+$("#tile1").click(function() {
     performLogic("#button1","#tile1");
 });
 
-$("#button2").click(function() {
+$("#tile2").click(function() {
     performLogic("#button2","#tile2");
 });
 
-$("#button3").click(function() {
+$("#tile3").click(function() {
     performLogic("#button3","#tile3");
 });
 
-$("#button4").click(function() {
+$("#tile4").click(function() {
     performLogic("#button4","#tile4");
 });
 
-$("#button5").click(function() {
+$("#tile5").click(function() {
     performLogic("#button5","#tile5");
 });
 
-$("#button6").click(function() {
+$("#tile6").click(function() {
     performLogic("#button6","#tile6");
 });
 
-$("#button7").click(function() {
+$("#tile7").click(function() {
     performLogic("#button7","#tile7");
 });
 
-$("#button8").click(function() {
+$("#tile8").click(function() {
     performLogic("#button8","#tile8");
 });
 
-$("#button9").click(function() {
+$("#tile9").click(function() {
     performLogic("#button9","#tile9");
 });
 
